@@ -22,15 +22,26 @@ class HomeScreen extends StatelessWidget {
         children: [
           Center(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(10,100,10,10),
+              padding: const EdgeInsets.fromLTRB(10,150,10,10),
               child: Container(
                 height: 60,
                 width: 320,
                 decoration:BoxDecoration(
                 color: const Color.fromARGB(255, 255, 255, 255),
-                  border: Border.all(),
+                  border: Border.all(
+                    width: 1.5,
+                  ),
                   borderRadius: BorderRadius.circular(30),
 
+                ),
+                child: const Center(
+                  child:  Text("Start Test",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
+                  ),
+                                  
+                )
                 ),
               ),
             ),
@@ -45,9 +56,20 @@ class HomeScreen extends StatelessWidget {
                 width: 320,
                 decoration:BoxDecoration(
                 color: const Color.fromARGB(255, 255, 255, 255),
-                  border: Border.all(),
+                  border: Border.all(
+                    width: 1.5,
+                  ),
                   borderRadius: BorderRadius.circular(30),
 
+                ),
+                child: const Center(
+                  child: Text("What are dead pixels?",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
+                  ),
+                  
+                  ),
                 ),
               ),
             ),
@@ -62,12 +84,26 @@ class HomeScreen extends StatelessWidget {
                 width: 320,
                 decoration:BoxDecoration(
                 color: const Color.fromARGB(255, 255, 255, 255),
-                  border: Border.all(),
+                  border: Border.all(
+                    width:1.5,
+                  ),
                   borderRadius: BorderRadius.circular(30),
 
                 ),
+                child: const Center(
+                  child: Text("My dead pixels",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
+                  ),
+                  
+                    
+                  ),
+                ),
               ),
+              
             ),
+            
           )
         ],
       ),
