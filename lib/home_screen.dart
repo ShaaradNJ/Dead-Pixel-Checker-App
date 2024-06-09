@@ -6,11 +6,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Center(child: Text("Dead-pixel-checker",)),
-        foregroundColor: Color.fromARGB(255, 255, 255, 255),
+        foregroundColor: const Color.fromARGB(255, 255, 255, 255),
         titleTextStyle: const TextStyle(fontSize: 24,
         fontFamily: 'Inter',
         ),
