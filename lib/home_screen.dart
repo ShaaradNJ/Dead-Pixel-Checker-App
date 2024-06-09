@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,9 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.black,
         title: const Center(child: Text("Dead-pixel-checker",)),
         foregroundColor: Color.fromARGB(255, 255, 255, 255),
-        titleTextStyle: const TextStyle(fontSize: 24),
+        titleTextStyle: const TextStyle(fontSize: 24,
+        fontFamily: 'Inter',
+        ),
 
         
       ),
@@ -20,10 +22,44 @@ class HomeScreen extends StatelessWidget {
         children: [
           Center(
             child: Padding(
+              padding: const EdgeInsets.fromLTRB(10,100,10,10),
+              child: Container(
+                height: 60,
+                width: 320,
+                decoration:BoxDecoration(
+                color: const Color.fromARGB(255, 255, 255, 255),
+                  border: Border.all(),
+                  borderRadius: BorderRadius.circular(30),
+
+                ),
+              ),
+            ),
+          ),
+
+
+          Center(
+            child: Padding(
               padding: const EdgeInsets.fromLTRB(10,70,10,10),
               child: Container(
-                height: 50,
-                width: 280,
+                height: 60,
+                width: 320,
+                decoration:BoxDecoration(
+                color: const Color.fromARGB(255, 255, 255, 255),
+                  border: Border.all(),
+                  borderRadius: BorderRadius.circular(30),
+
+                ),
+              ),
+            ),
+          ),
+
+
+          Center(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(10,70,10,10),
+              child: Container(
+                height: 60,
+                width: 320,
                 decoration:BoxDecoration(
                 color: const Color.fromARGB(255, 255, 255, 255),
                   border: Border.all(),
@@ -35,6 +71,8 @@ class HomeScreen extends StatelessWidget {
           )
         ],
       ),
+
+
       
       
 
