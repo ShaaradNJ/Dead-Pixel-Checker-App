@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
                 child: const Center(
                   child:  Text("Start Test",
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: 22,
                     fontWeight: FontWeight.w500,
                   ),
                                   
@@ -65,7 +65,7 @@ class HomeScreen extends StatelessWidget {
                 child: const Center(
                   child: Text("What are dead pixels?",
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: 22,
                     fontWeight: FontWeight.w500,
                   ),
                   
@@ -91,9 +91,9 @@ class HomeScreen extends StatelessWidget {
 
                 ),
                 child: const Center(
-                  child: Text("My dead pixels",
+                  child: Text("My Dead Pixels",
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: 22,
                     fontWeight: FontWeight.w500,
                   ),
                   
