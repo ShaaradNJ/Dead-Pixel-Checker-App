@@ -14,8 +14,6 @@ class HomeScreen extends StatelessWidget {
         titleTextStyle: const TextStyle(fontSize: 24,
         fontFamily: 'Inter',
         ),
-
-        
       ),
       body: 
       Column(
@@ -47,7 +45,6 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
 
-
           Center(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(10,70,10,10),
@@ -75,7 +72,6 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
 
-
           Center(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(10,70,10,10),
@@ -95,9 +91,7 @@ class HomeScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.w500,
-                  ),
-                  
-                    
+                  ),                    
                   ),
                 ),
               ),
@@ -107,11 +101,6 @@ class HomeScreen extends StatelessWidget {
           )
         ],
       ),
-
-
-      
-      
-
     );
   }
 }
