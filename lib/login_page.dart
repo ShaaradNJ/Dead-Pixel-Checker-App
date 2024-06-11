@@ -30,12 +30,17 @@ class LoginPage extends StatelessWidget {
                   height: 60,
                   width: 320,
                   decoration:  BoxDecoration(
-                    color: Colors.white,
+                    color: Colors.black,
                     borderRadius: BorderRadius.circular(30),
                     border: Border.all(
                       width: 1.5,
                     ),
                   ),
+                  child: const Center(child: Text("Sign up with Google",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),)),
                 ),
               ),
             ),
@@ -55,6 +60,11 @@ class LoginPage extends StatelessWidget {
                       width: 1.5,
                     ),
                   ),
+                  child: const Center(child: Text("Sign in",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.black,
+                  ),)),
                 ),
               ),
             ),
