@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:dead_pixel_checker_app/instruction.dart';
 
 class HomeScreen extends StatelessWidget {
    const HomeScreen({super.key});
@@ -18,28 +19,33 @@ class HomeScreen extends StatelessWidget {
       body: 
       Column(
         children: [
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(10,150,10,10),
-              child: Container(
-                height: 60,
-                width: 320,
-                decoration:BoxDecoration(
-                color: const Color.fromARGB(255, 255, 255, 255),
-                  border: Border.all(
-                    width: 1.5,
+          GestureDetector(
+            onTap:() {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {return const InstructionPage();} ));
+            },
+            child: Center(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(10,150,10,10),
+                child: Container(
+                  height: 60,
+                  width: 320,
+                  decoration:BoxDecoration(
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                    border: Border.all(
+                      width: 1.5,
+                    ),
+                    borderRadius: BorderRadius.circular(30),
+            
                   ),
-                  borderRadius: BorderRadius.circular(30),
-
-                ),
-                child: const Center(
-                  child:  Text("Start Test",
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w500,
+                  child: const Center(
+                    child:  Text("Start Test",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w500,
+                    ),
+                                    
+                  )
                   ),
-                                  
-                )
                 ),
               ),
             ),
