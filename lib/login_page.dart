@@ -18,7 +18,7 @@ class LoginPage extends StatelessWidget {
           ),)
         ),
       ),
-      body: 
+      body:  
        Column(
           children: [
             Center(

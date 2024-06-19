@@ -24,7 +24,7 @@ class InstructionPage extends StatelessWidget {
       body:  Column(
         children: [
           const Padding(
-            padding: EdgeInsets.fromLTRB(35,120,10,10),
+            padding: EdgeInsets.fromLTRB(30,120,10,10),
             child: Text("Tap on the\napproximate\nlocation\nwhere you don't\nsee the\npixel colored.",
             style: TextStyle(
               fontSize: 29,
@@ -33,7 +33,7 @@ class InstructionPage extends StatelessWidget {
             ),),
           ),
           const SizedBox(
-            height: 150,
+            height: 200,
           ),
           Center(
             child: Container(
@@ -48,12 +48,16 @@ class InstructionPage extends StatelessWidget {
                 )
             
               ),
-              child:const  Center(
-                child:  Text(
-                  "Okay",
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w500,
+
+              child:  GestureDetector(
+                
+                child: const Center(
+                  child:  Text(
+                    "Okay",
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
               ),

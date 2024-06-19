@@ -50,8 +50,8 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-
-          Center(
+          GestureDetector(
+            child:Center(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(10,70,10,10),
               child: Container(
@@ -77,6 +77,11 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
+            
+            
+          ),
+
+          
 
           Center(
             child: Padding(
