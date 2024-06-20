@@ -1,3 +1,4 @@
+import 'package:dead_pixel_checker_app/red_screen.dart';
 import 'package:flutter/material.dart';
 
 class Instruction2Page extends StatelessWidget {
@@ -22,16 +23,16 @@ class Instruction2Page extends StatelessWidget {
         children: [
           Center(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(10,70,10,10),
+              padding: const EdgeInsets.fromLTRB(10,100,10,10),
               child: Container(
-                height: 210,
+                height: 340,
                 width: 300,
                 color: const Color.fromARGB(255, 255, 255, 255),
                 child:const  Center(
                   
                   child:  Padding(
                     padding: EdgeInsets.only(left:30),
-                    child: Text("Clean your screen and Increase the brightness for\nbetter results!"
+                    child: Text("Clean your screen and Increase the brightness for\nbetter results!\n\nCheck for any\npixel that is not glowing."
                     ,
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
@@ -44,25 +45,29 @@ class Instruction2Page extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 250,
+            height: 150,
           ),
           
-          Container(
-            height: 60,
-            width: 350,
-            decoration:  BoxDecoration(
-
-            color:  Colors.black,
-            borderRadius: BorderRadius.circular(30),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {return const RedScreen();} ,));
+            },
+            child: Container(
+              height: 60,
+              width: 350,
+              decoration:  BoxDecoration(
+              color:  Colors.black,
+              borderRadius: BorderRadius.circular(30),
+              ),
+              child: const Center(
+                child: Text("I am ready",
+                style: TextStyle(
+                  fontSize: 24,
+                  color: Colors.white
+                ),),
+              ),
+            
             ),
-            child: const Center(
-              child: Text("I am ready",
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white
-              ),),
-            ),
-
           )
         ],
       ),
