@@ -1,3 +1,4 @@
+import 'package:dead_pixel_checker_app/info_dead_pixels.dart';
 import 'package:flutter/material.dart';
 import 'package:dead_pixel_checker_app/instruction.dart';
 
@@ -51,6 +52,9 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           GestureDetector(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) {return const InfoDead();}));
+            },
             
             child:Center(
             child: Padding(
@@ -72,14 +76,12 @@ class HomeScreen extends StatelessWidget {
                     fontSize: 22,
                     fontWeight: FontWeight.w500,
                   ),
-                  
                   ),
                 ),
               ),
             ),
           ),
-            
-            
+
           ),
 
           
