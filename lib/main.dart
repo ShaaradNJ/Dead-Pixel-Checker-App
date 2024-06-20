@@ -1,5 +1,6 @@
 import 'package:dead_pixel_checker_app/green_screen.dart';
 import 'package:dead_pixel_checker_app/home_screen.dart';
+import 'package:dead_pixel_checker_app/info_dead_pixels.dart';
 import 'package:dead_pixel_checker_app/instruction.dart';
 import 'package:dead_pixel_checker_app/login_page.dart';
 import 'package:dead_pixel_checker_app/red_screen.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  const MaterialApp(
-      home:HomeScreen(),
+      home:InfoDead(),
       
       
 
