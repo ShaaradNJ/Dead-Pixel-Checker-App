@@ -1,3 +1,4 @@
+import 'package:dead_pixel_checker_app/green_screen.dart';
 import 'package:flutter/material.dart';
 
 class RedScreen extends StatelessWidget {
@@ -5,7 +6,15 @@ class RedScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
+      body: 
+      GestureDetector(
+        onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context){return const GreenScreen();}));
+        },
+
+      ),
+      
       backgroundColor: Colors.red,
     );
   }

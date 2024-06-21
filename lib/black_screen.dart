@@ -4,8 +4,13 @@ class BlackScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       backgroundColor: Colors.black,
+      body: GestureDetector(
+        onDoubleTap: () {
+          Navigator.pop(context);
+        },
+      ),
     );
   }
 }
