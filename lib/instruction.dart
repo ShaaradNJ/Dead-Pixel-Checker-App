@@ -1,3 +1,4 @@
+import 'package:dead_pixel_checker_app/instruction2.dart';
 import 'package:flutter/material.dart';
 
 class InstructionPage extends StatelessWidget {
@@ -50,7 +51,8 @@ class InstructionPage extends StatelessWidget {
               ),
 
               child:  GestureDetector(
-                
+                onTap:(){Navigator.push(context, MaterialPageRoute(builder: (context) {return const Instruction2Page();} ,));
+                }, 
                 child: const Center(
                   child:  Text(
                     "Okay",
