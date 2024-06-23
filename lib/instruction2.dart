@@ -7,6 +7,7 @@ class Instruction2Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      
       appBar: AppBar(
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
@@ -23,11 +24,11 @@ class Instruction2Page extends StatelessWidget {
         children: [
           Center(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(10,100,10,10),
+              padding: const EdgeInsets.fromLTRB(30,100,10,10),
               child: Container(
                 height: 340,
                 width: 300,
-                color: const Color.fromARGB(255, 255, 255, 255),
+                color: Colors.white,
                 child:const  Center(
                   
                   child:  Padding(
@@ -63,7 +64,7 @@ class Instruction2Page extends StatelessWidget {
                 child: Text("I am ready",
                 style: TextStyle(
                   fontSize: 24,
-                  color: Colors.white
+                  color: Color.fromARGB(255, 255, 255, 255)
                 ),),
               ),
             
