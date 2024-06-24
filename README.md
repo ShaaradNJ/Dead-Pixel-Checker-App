@@ -6,16 +6,10 @@ A new Flutter project.
 
 PixelChecker is a simple yet highly useful Flutter app designed to help users check for dead or under-glowing pixels on their screens. The app displays solid colors such as red, green, blue, and black, enabling users to easily identify any pixel issues.
 
+1) RGB Color Display: Toggle between solid red, green, and blue screens to pinpoint dead or under-glowing pixels. These primary colors help highlight any discrepancies on the screen.
 
-RGB Color Display: Quickly switch between red, green, and blue screens to spot dead or under-glowing pixels.
-Black Color Display: Use the black screen to identify pixels that might be stuck on a single color.
-User-Friendly Interface: Simple and intuitive interface for effortless navigation and use.
+2) Black Color Display: A black screen can reveal stuck pixels that may not be visible on colored backgrounds. It's particularly useful for identifying pixels stuck on a single color.
 
-A few resources to get you started if this is your first Flutter project:
+3) User-Friendly Interface: The app's clean and intuitive design ensures that users of all technical levels can navigate and use it without any hassle.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4) Portability: Lightweight and fast, PixelChecker is perfect for on-the-go testing. Whether you're buying a new device, selling an old one, or simply maintaining your current screen, PixelChecker is your go-to tool.
