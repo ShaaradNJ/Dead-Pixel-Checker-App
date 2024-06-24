@@ -28,18 +28,26 @@ class LastPage extends StatelessWidget {
              ),
 
               const SizedBox(
-               height: 100,
+               height: 130,
              ),
               Center(
                 child: Container(
                 height: 60,
                 width: 350,
                 decoration:  BoxDecoration(
-                  color: const Color.fromARGB(255, 255, 255, 255),
+                  color:Colors.black,
                   borderRadius: BorderRadius.circular(30),   
                   border: Border.all(
                     width: 1.5,
                   )               
+                ),
+                child: const Center(
+                  child: Text("Run Test Again!",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white,
+                  ),),
                 ),
                 
                              ),
@@ -54,12 +62,20 @@ class LastPage extends StatelessWidget {
                 height: 60,
                 width: 350,
                 decoration:  BoxDecoration(
-                  color:Colors.white,
+                  color:Colors.black,
                   border: Border.all(
                     width: 1.5,
                   ),
                   borderRadius: BorderRadius.circular(30),
                   
+                ),
+                child: const Center(
+                  child: Text("Return to Home screen",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
+                    color:Colors.white,
+                  ),),
                 ),
                 
                              ),
