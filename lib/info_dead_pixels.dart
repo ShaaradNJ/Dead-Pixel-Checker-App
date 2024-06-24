@@ -7,7 +7,10 @@ class InfoDead extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(child: Text("About Dead Pixels")),
+        title: const Center(child: Padding(
+          padding: EdgeInsets.only(right: 40),
+          child: Text("About Dead Pixels"),
+        )),
         foregroundColor: const Color.fromARGB(255, 255, 255, 255),
         backgroundColor: Colors.black,
       ),
