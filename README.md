@@ -46,7 +46,7 @@ flutter run
 
 ## Contact
 
-Feel free to contact me at shaaradjarandikar#gmail.com
+Feel free to contact me at shaaradjarandikar@gmail.com
 
 
 
