@@ -11,7 +11,7 @@ import 'package:dead_pixel_checker_app/blue_screen.dart';
 import 'package:dead_pixel_checker_app/instruction.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

@@ -35,7 +35,7 @@ flutter pub get
 ```sh
 flutter run
 ```
-## Contribution
+## Contributing
 
 1) Fork the repository.
 2) Create a new branch (git checkout -b feature/your-feature-name).
