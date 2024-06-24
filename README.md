@@ -14,3 +14,9 @@ PixelChecker is a simple yet highly useful Flutter app designed to help users ch
 
 4) Portability: Lightweight and fast, PixelChecker is perfect for on-the-go testing. Whether you're buying a new device, selling an old one, or simply maintaining your current screen, PixelChecker is your go-to tool.
 
+## Installation
+
+```bash
+git clone https://github.com/ShaaradNJ/Dead-Pixel-Checker-App.git
+```
+
