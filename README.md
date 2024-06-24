@@ -4,7 +4,12 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+PixelChecker is a simple yet highly useful Flutter app designed to help users check for dead or under-glowing pixels on their screens. The app displays solid colors such as red, green, blue, and black, enabling users to easily identify any pixel issues.
+
+Features
+RGB Color Display: Quickly switch between red, green, and blue screens to spot dead or under-glowing pixels.
+Black Color Display: Use the black screen to identify pixels that might be stuck on a single color.
+User-Friendly Interface: Simple and intuitive interface for effortless navigation and use.
 
 A few resources to get you started if this is your first Flutter project:
 
