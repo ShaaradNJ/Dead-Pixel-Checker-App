@@ -16,7 +16,7 @@ PixelChecker is a simple yet highly useful Flutter app designed to help users ch
 
 ## Installation
 
-```bash
+```sh
 git clone https://github.com/ShaaradNJ/Dead-Pixel-Checker-App.git
 ```
 
