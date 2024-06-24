@@ -26,4 +26,13 @@ git clone https://github.com/ShaaradNJ/Dead-Pixel-Checker-App.git
 cd pixelchecker
 ```
 
+3) Install dependencies:
+```sh
+flutter pub get
+```
+4) Run the app:
+```sh
+flutter run
+```
+
 
