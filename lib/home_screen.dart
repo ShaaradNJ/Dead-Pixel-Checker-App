@@ -14,6 +14,11 @@ class HomeScreen extends StatelessWidget {
         title: const Center(
             child: Text(
           "Dead-pixel-checker",
+          style: TextStyle(
+            fontFamily: 'Inter',
+            fontWeight: FontWeight.bold,
+          ),
+          
         )),
         foregroundColor: const Color.fromARGB(255, 255, 255, 255),
         titleTextStyle: const TextStyle(
@@ -47,7 +52,8 @@ class HomeScreen extends StatelessWidget {
                     "Start Test",
                     style: TextStyle(
                       fontSize: 22,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Inter',
                     ),
                   )),
                 ),
@@ -78,7 +84,8 @@ class HomeScreen extends StatelessWidget {
                       "What are dead pixels?",
                       style: TextStyle(
                         fontSize: 22,
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Inter',
                       ),
                     ),
                   ),
@@ -104,7 +111,8 @@ class HomeScreen extends StatelessWidget {
                     "My Dead Pixels",
                     style: TextStyle(
                       fontSize: 22,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Inter',
                     ),
                   ),
                 ),

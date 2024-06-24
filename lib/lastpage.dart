@@ -18,6 +18,8 @@ class LastPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.white,
+                fontFamily: 'Inter',
+                fontWeight: FontWeight.bold,
               ),
             ),
           ),
@@ -26,12 +28,13 @@ class LastPage extends StatelessWidget {
       body: Column(
         children: [
           const Padding(
-            padding: EdgeInsets.fromLTRB(10, 70, 10, 10),
+            padding: EdgeInsets.fromLTRB(20, 70, 10, 10),
             child: Text(
               "You can run\nthis test again,\nif you feel you\nhave missed\nout some pixels.",
               style: TextStyle(
                 fontSize: 32,
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Inter',
               ),
             ),
           ),
@@ -59,8 +62,9 @@ class LastPage extends StatelessWidget {
                     "Run Test Again!",
                     style: TextStyle(
                       fontSize: 24,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.bold,
                       color: Colors.white,
+                      fontFamily: 'Inter',
                     ),
                   ),
                 ),
@@ -92,7 +96,8 @@ class LastPage extends StatelessWidget {
                     "Return to Home screen",
                     style: TextStyle(
                       fontSize: 24,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Inter',
                       color: Colors.white,
                     ),
                   ),

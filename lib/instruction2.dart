@@ -17,6 +17,8 @@ class Instruction2Page extends StatelessWidget {
               "Dead-pixel-checker",
               style: TextStyle(
                 fontSize: 24,
+                fontFamily: 'Inter',
+                fontWeight: FontWeight.bold,
               ),
             ),
           ),
@@ -26,7 +28,7 @@ class Instruction2Page extends StatelessWidget {
         children: [
           Center(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(30, 100, 10, 10),
+              padding: const EdgeInsets.fromLTRB(10, 100, 10, 10),
               child: Container(
                 height: 340,
                 width: 300,
@@ -39,6 +41,8 @@ class Instruction2Page extends StatelessWidget {
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 30,
+                        fontFamily: 'Inter',
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
@@ -68,7 +72,9 @@ class Instruction2Page extends StatelessWidget {
                 child: Text(
                   "I am ready",
                   style: TextStyle(
-                      fontSize: 24, color: Color.fromARGB(255, 255, 255, 255)),
+                      fontSize: 24, color: Color.fromARGB(255, 255, 255, 255),
+                      fontFamily: 'Inter',
+                      fontWeight: FontWeight.bold,),
                 ),
               ),
             ),

@@ -17,8 +17,9 @@ class InstructionPage extends StatelessWidget {
                 "Dead-pixel-checker",
                 style: TextStyle(
                   color: Colors.white,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.bold,
                   fontSize: 22,
+                  fontFamily: 'Inter',
                 ),
               ),
             ),
@@ -27,12 +28,13 @@ class InstructionPage extends StatelessWidget {
         body: Column(
           children: [
             const Padding(
-              padding: EdgeInsets.fromLTRB(30, 120, 10, 10),
+              padding: EdgeInsets.fromLTRB(30, 140, 10, 10),
               child: Text(
                 "Tap on the\napproximate\nlocation\nwhere you don't\nsee the\npixel colored.",
                 style: TextStyle(
                   fontSize: 29,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Inter',
                 ),
               ),
             ),
@@ -62,8 +64,9 @@ class InstructionPage extends StatelessWidget {
                       "Okay",
                       style: TextStyle(
                         fontSize: 24,
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.bold,
                         color: Colors.white,
+                        fontFamily: 'Inter',
                       ),
                     ),
                   ),
