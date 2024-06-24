@@ -6,15 +6,14 @@ class RedScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body: 
-      GestureDetector(
+    return Scaffold(
+      body: GestureDetector(
         onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context){return const GreenScreen();}));
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return const GreenScreen();
+          }));
         },
-
       ),
-      
       backgroundColor: Colors.red,
     );
   }

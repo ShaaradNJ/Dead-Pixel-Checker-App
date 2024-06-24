@@ -11,11 +11,14 @@ class LastPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Center(
-          child: Text(
-            "Dead-pixel-Detector",
-            style: TextStyle(
-              fontSize: 24,
-              color: Colors.white,
+          child: Padding(
+            padding: EdgeInsets.only(right: 50),
+            child: Text(
+              "Dead-pixel-checker",
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.white,
+              ),
             ),
           ),
         ),

@@ -6,11 +6,13 @@ class GreenScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: Colors.green,
       body: GestureDetector(
         onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context){return const BlueScreen();}));
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return const BlueScreen();
+          }));
         },
         onDoubleTap: () {
           Navigator.pop(context);

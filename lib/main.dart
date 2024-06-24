@@ -10,12 +10,8 @@ import 'package:flutter/material.dart';
 import 'package:dead_pixel_checker_app/blue_screen.dart';
 import 'package:dead_pixel_checker_app/instruction.dart';
 
-
-
-
-void main(){
+void main() {
   runApp(MyApp());
-
 }
 
 class MyApp extends StatelessWidget {
@@ -23,11 +19,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const MaterialApp(
-      home:LastPage(),
-      
-      
-
+    return const MaterialApp(
+      home: HomeScreen(),
     );
   }
 }

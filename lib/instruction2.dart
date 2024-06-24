@@ -6,73 +6,75 @@ class Instruction2Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      
+    return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         title: const Center(
-          child:  Text("Dead-Pixel-Detector",
-          style: TextStyle(
-            fontSize: 24,
-          ),),
+          child: Padding(
+            padding: EdgeInsets.only(right: 40),
+            child: Text(
+              "Dead-pixel-checker",
+              style: TextStyle(
+                fontSize: 24,
+              ),
+            ),
+          ),
         ),
       ),
-
-      body:
-       Column(
+      body: Column(
         children: [
           Center(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(30,100,10,10),
+              padding: const EdgeInsets.fromLTRB(30, 100, 10, 10),
               child: Container(
                 height: 340,
                 width: 300,
                 color: Colors.white,
-                child:const  Center(
-                  
-                  child:  Padding(
-                    padding: EdgeInsets.only(left:30),
-                    child: Text("Clean your screen and Increase the brightness for\nbetter results!\n\nCheck for any\npixel that is not glowing."
-                    ,
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0),
-                      fontSize: 30,
-                    ),),
+                child: const Center(
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 30),
+                    child: Text(
+                      "Clean your screen and Increase the brightness for\nbetter results!\n\nCheck for any\npixel that is not glowing.",
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontSize: 30,
+                      ),
+                    ),
                   ),
                 ),
-              
               ),
             ),
           ),
           const SizedBox(
             height: 150,
           ),
-          
           GestureDetector(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {return const RedScreen();} ,));
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) {
+                  return const RedScreen();
+                },
+              ));
             },
             child: Container(
               height: 60,
               width: 350,
-              decoration:  BoxDecoration(
-              color:  Colors.black,
-              borderRadius: BorderRadius.circular(30),
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.circular(30),
               ),
               child: const Center(
-                child: Text("I am ready",
-                style: TextStyle(
-                  fontSize: 24,
-                  color: Color.fromARGB(255, 255, 255, 255)
-                ),),
+                child: Text(
+                  "I am ready",
+                  style: TextStyle(
+                      fontSize: 24, color: Color.fromARGB(255, 255, 255, 255)),
+                ),
               ),
-            
             ),
           )
         ],
       ),
     );
   }
-  
 }
