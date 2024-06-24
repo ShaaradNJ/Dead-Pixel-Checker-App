@@ -1,3 +1,4 @@
+import 'package:dead_pixel_checker_app/home_screen.dart';
 import 'package:dead_pixel_checker_app/red_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +8,6 @@ class LastPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Center(
@@ -20,7 +20,6 @@ class LastPage extends StatelessWidget {
           ),
         ),
       ),
-
       body: Column(
         children: [
           const Padding(
@@ -33,14 +32,14 @@ class LastPage extends StatelessWidget {
               ),
             ),
           ),
-
           const SizedBox(
             height: 130,
           ),
-
           GestureDetector(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context){return const RedScreen();}));
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return const RedScreen();
+              }));
             },
             child: Center(
               child: Container(
@@ -65,35 +64,39 @@ class LastPage extends StatelessWidget {
               ),
             ),
           ),
-
           const SizedBox(
             height: 70,
           ),
-
-          Center(
-            child: Container(
-              height: 60,
-              width: 350,
-              decoration: BoxDecoration(
-                color: Colors.black,
-                border: Border.all(
-                  width: 1.5,
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(builder: (context) => const HomeScreen()),
+                  (Route<dynamic> route) => false);
+            },
+            child: Center(
+              child: Container(
+                height: 60,
+                width: 350,
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  border: Border.all(
+                    width: 1.5,
+                  ),
+                  borderRadius: BorderRadius.circular(30),
                 ),
-                borderRadius: BorderRadius.circular(30),
-              ),
-              child: const Center(
-                child: Text(
-                  "Return to Home screen",
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.white,
+                child: const Center(
+                  child: Text(
+                    "Return to Home screen",
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
             ),
           )
-
         ],
       ),
     );
