@@ -1,10 +1,10 @@
 # dead_pixel_checker_app
 
-A new Flutter project.
+A Flutter project made for fun!
 
 ## Getting Started
 
-PixelChecker is a simple yet highly useful Flutter app designed to help users check for dead or under-glowing pixels on their screens. The app displays solid colors such as red, green, blue, and black, enabling users to easily identify any pixel issues.
+Dead-pixel-checker is a simple yet highly useful Flutter app designed to help users check for dead or under-glowing pixels on their screens. The app displays solid colors such as red, green, blue, and black, enabling users to easily identify any pixel issues.
 
 1) RGB Color Display: Toggle between solid red, green, and blue screens to pinpoint dead or under-glowing pixels. These primary colors help highlight any discrepancies on the screen.
 
