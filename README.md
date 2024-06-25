@@ -44,9 +44,7 @@ flutter run
 5) Push to the branch (git push origin feature/your-feature-name).
 6) Open a pull request.
 
-## Contact
 
-Feel free to contact me at shaaradjarandikar@gmail.com
 
 
 
