@@ -59,7 +59,7 @@ class LastPage extends StatelessWidget {
                     )),
                 child: const Center(
                   child: Text(
-                    "Run Test Again!",
+                    "Run Test again!",
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
